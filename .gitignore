@@ -1,0 +1,27 @@
+# XAMPP specific
+.htaccess
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database files (if any)
+*.sql
+*.db
+
+# Backup files
+*.bak
+*.backup
