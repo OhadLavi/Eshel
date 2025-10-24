@@ -1,36 +1,35 @@
-﻿<!DOCTYPE html>
+﻿<?php
+$HeadTitle = "תודה על פנייתך";
+$PageID = 6; // contact = 6
 
-<%
-	dim HeadTitle
-	HeadTitle = "Contact"
-	
-	dim PageID 
-	PageID = 6 
-	' contact = 6
-	
-	Dim Images(0)
-	Images(0) = "img/bg/contact-bg.jpg"
-	' The page background image is set here.
-	' It is used in <head> section
-	
-%>
+$Images = array("img/bg/contact-bg.jpg");
+?>
 
-<?php include 'include/head.asp';?>
-<META HTTP-EQUIV="refresh" CONTENT="4;URL=./index.asp">
+<!DOCTYPE html>
+
+<?php include 'include/head.php'; ?>
+
 </head>
 
 <body id="contact-page">
 	
-	<!--#include file="include/header.asp"-->
+	<?php include 'include/header.php'; ?>
 	
-	<section id="page-content" style="padding-bottom: 173px; background-image: url(img/deco-medium.png);">
-		<h1 id="page-title">צור קשר</h1>
-		<p style="text-align:center;">
-			פנייתך התקבלה, תודה 
-		</p>
+	<section id="page-content">
+		<h1 id="page-title">תודה על פנייתך</h1>
+		<div style="text-align: center; padding: 50px;">
+			<p style="font-size: 18px; color: #333;">
+				פנייתך התקבלה בהצלחה!<br>
+				נחזור אליך בהקדם האפשרי.
+			</p>
+			<br>
+			<a href="index.php" style="color: #F7891F; text-decoration: none; font-weight: bold;">
+				← חזרה לדף הבית
+			</a>
+		</div>
 	</section>
 	
-	<?php include 'include/footer.php';?>
+	<?php include 'include/footer.php'; ?>
 	
 </body>
 </html>
